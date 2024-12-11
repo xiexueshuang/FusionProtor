@@ -45,8 +45,8 @@ def sign(key, msg):
     return hmac.new(key, msg.encode("utf-8"), hashlib.sha256).digest()
 
 
-secret_id = "AKID7Kho2CPeuGmAMfu8FIGIWp6TpN5hAmMk"
-secret_key = "GQgopw597yrIrJetCbwBGC5020wlTzPx"
+secret_id = ""
+secret_key = ""
 token = ""
 
 
