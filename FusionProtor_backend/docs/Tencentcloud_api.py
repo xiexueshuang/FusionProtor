@@ -45,10 +45,6 @@ def sign(key, msg):
     return hmac.new(key, msg.encode("utf-8"), hashlib.sha256).digest()
 
 
-secret_id = ""
-secret_key = ""
-token = ""
-
 
 
 def TextTranslate(prompt):
