@@ -1,0 +1,97 @@
+{
+    "extensions": [
+        ".bmp",
+        ".sgi",
+        ".rgb",
+        ".bw",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".jp2",
+        ".j2c",
+        ".tga",
+        ".cin",
+        ".dpx",
+        ".exr",
+        ".hdr",
+        ".tif",
+        ".tiff",
+        ".webp"
+    ],
+    "baseColor": [
+        "color",
+        "basecolor",
+        "albedo",
+        "bc",
+        "diffuse",
+        "diff",
+        "diff_1k",
+        "diff_2k",
+        "diff_4k",
+        "diff_8k"
+    ],
+    "metallic": [
+        "metalness",
+        "metallic",
+        "metal",
+        "metal_1k",
+        "metal_2k",
+        "metal_4k",
+        "metal_8k"
+    ],
+    "roughness": [
+        "roughness",
+        "rough",
+        "rough_1k",
+        "rough_2k",
+        "rough_4k",
+        "rough_8k"
+    ],
+    "emission": [
+        "emission",
+        "emissive"
+    ],
+    "alpha": [
+        "opacity",
+        "alpha"
+    ],
+    "normal": [
+        "normaldx",
+        "normal-dx",
+        "normalgl",
+        "normal-gl",
+        "normal-ogl",
+        "normal",
+        "bump",
+        "bump_1k",
+        "bump_2k",
+        "bump_4k",
+        "bump_8k",
+        "nor_dx_1k",
+        "nor_dx_2k",
+        "nor_dx_4k",
+        "nor_dx_8k",
+        "nor_gl_1k",
+        "nor_gl_2k",
+        "nor_gl_4k",
+        "nor_gl_8k"
+    ],
+    "height": [
+        "height",
+        "displacement",
+        "disp",
+        "disp_1k",
+        "disp_2k",
+        "disp_4k",
+        "disp_8k"
+    ],
+    "ambientOcclusion": [
+        "ambientocclusion",
+        "ambient_occlusion",
+        "ao",
+        "ao_1k",
+        "ao_2k",
+        "ao_4k",
+        "ao_8k"
+    ]
+}
