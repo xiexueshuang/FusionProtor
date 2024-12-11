@@ -1,0 +1,549 @@
+{
+    "named_endpoints": {},
+    "unnamed_endpoints": {
+        "0": {
+            "parameters": [
+                {
+                    "label": "Original image (Mask 1)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "Original image (Mask 1)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 1",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                }
+            ]
+        },
+        "1": {
+            "parameters": [
+                {
+                    "label": "Original (Mask 2)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "Original (Mask 2)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 2",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                }
+            ]
+        },
+        "2": {
+            "parameters": [
+                {
+                    "label": "Original image (Mask 3)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "Removal Mask 3",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                }
+            ]
+        },
+        "3": {
+            "parameters": [
+                {
+                    "label": "Original image (Refine Mask)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "Refine Mask",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                }
+            ]
+        },
+        "5": {
+            "parameters": [
+                {
+                    "label": "Removal Mask 1",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 2",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 3",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Refine Mask",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Mask 1)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original (Mask 2)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Mask 3)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "value_40",
+                    "type": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": false,
+                            "maxSize": 2,
+                            "minSize": 2,
+                            "prefixItems": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "description": "name of file"
+                                        },
+                                        "data": {
+                                            "type": "string",
+                                            "description": "base64 representation of file"
+                                        },
+                                        "size": {
+                                            "type": "integer",
+                                            "description": "size of image in bytes"
+                                        },
+                                        "is_file": {
+                                            "type": "boolean",
+                                            "description": "true if the file has been uploaded to the server"
+                                        },
+                                        "orig_name": {
+                                            "type": "string",
+                                            "description": "original name of the file"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "data"
+                                    ]
+                                },
+                                {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "description": "caption of image"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "python_type": {
+                        "type": "Tuple[Dict(name: str (name of file), data: str (base64 representation of file), size: int (size of image in bytes), is_file: bool (true if the file has been uploaded to the server), orig_name: str (original name of the file)), str | None]",
+                        "description": ""
+                    },
+                    "component": "Gallery",
+                    "serializer": "GallerySerializable"
+                }
+            ]
+        },
+        "6": {
+            "parameters": [
+                {
+                    "label": "Original image (Mask 1)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original (Mask 2)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Mask 3)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Refine Mask)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 1",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 2",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 3",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Refine Mask",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "example_input": "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",
+                    "serializer": "ImgSerializable"
+                }
+            ],
+            "returns": [
+                {
+                    "label": "Original image (Mask 1)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original (Mask 2)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Mask 3)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Original image (Refine Mask)",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 1",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 2",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Removal Mask 3",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                },
+                {
+                    "label": "Refine Mask",
+                    "type": {
+                        "type": "string",
+                        "description": "base64 representation of an image"
+                    },
+                    "python_type": {
+                        "type": "str",
+                        "description": "base64 representation of an image"
+                    },
+                    "component": "Image",
+                    "serializer": "ImgSerializable"
+                }
+            ]
+        }
+    }
+}

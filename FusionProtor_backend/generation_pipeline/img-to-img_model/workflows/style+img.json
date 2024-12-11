@@ -1,0 +1,305 @@
+{
+  "3": {
+    "inputs": {
+      "images": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "6": {
+    "inputs": {
+      "model": "Kwai-Kolors/Kolors",
+      "precision": "fp16"
+    },
+    "class_type": "DownloadAndLoadKolorsModel",
+    "_meta": {
+      "title": "(Down)load Kolors Model"
+    }
+  },
+  "10": {
+    "inputs": {
+      "samples": [
+        "26",
+        0
+      ],
+      "vae": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "11": {
+    "inputs": {
+      "vae_name": "sdxl_diffusion_pytorch_model.fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "12": {
+    "inputs": {
+      "prompt": "物流车，干净，产品设计，完整视图，白色背景，高清，艺术感，3D渲染，16k，高细节，实物拍摄，逼真，真实产品",
+      "negative_prompt": "文字，不完整，丑陋，不干净，脏",
+      "num_images_per_prompt": 1,
+      "chatglm3_model": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "KolorsTextEncode",
+    "_meta": {
+      "title": "Kolors Text Encode"
+    }
+  },
+  "13": {
+    "inputs": {
+      "precision": "fp16"
+    },
+    "class_type": "DownloadAndLoadChatGLM3",
+    "_meta": {
+      "title": "(Down)load ChatGLM3 Model"
+    }
+  },
+  "14": {
+    "inputs": {
+      "width": 1920,
+      "height": 1088,
+      "seed": 601006024241045,
+      "steps": 40,
+      "cfg": 8,
+      "scheduler": "EulerDiscreteScheduler",
+      "denoise_strength": 0.55,
+      "kolors_model": [
+        "6",
+        0
+      ],
+      "kolors_embeds": [
+        "12",
+        0
+      ],
+      "latent": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "KolorsSampler",
+    "_meta": {
+      "title": "Kolors Sampler"
+    }
+  },
+  "16": {
+    "inputs": {
+      "pixels": [
+        "17",
+        0
+      ],
+      "vae": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "17": {
+    "inputs": {
+      "image": "car.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "21": {
+    "inputs": {
+      "unet_name": "diffusion_pytorch_model.fp16.safetensors"
+    },
+    "class_type": "MZ_KolorsUNETLoaderV2",
+    "_meta": {
+      "title": "MinusZone - KolorsUNETLoaderV2"
+    }
+  },
+  "23": {
+    "inputs": {
+      "weight": 0.5,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 1,
+      "embeds_scaling": "V only",
+      "model": [
+        "21",
+        0
+      ],
+      "ipadapter": [
+        "24",
+        0
+      ],
+      "image": [
+        "28",
+        0
+      ],
+      "clip_vision": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "MZ_IPAdapterAdvancedKolors",
+    "_meta": {
+      "title": "IPAdapterAdvanced(kolors) - Legacy"
+    }
+  },
+  "24": {
+    "inputs": {
+      "ipadapter_file": "ip_adapter_plus_general.bin"
+    },
+    "class_type": "MZ_IPAdapterModelLoaderKolors",
+    "_meta": {
+      "title": "IPAdapterModelLoader(kolors) - Legacy"
+    }
+  },
+  "25": {
+    "inputs": {
+      "clip_name": "pytorch_model.bin"
+    },
+    "class_type": "MZ_KolorsCLIPVisionLoader",
+    "_meta": {
+      "title": "MinusZone - KolorsCLIPVisionLoader - Legacy"
+    }
+  },
+  "26": {
+    "inputs": {
+      "seed": 700325239207649,
+      "steps": 50,
+      "cfg": 8,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 0.58,
+      "model": [
+        "23",
+        0
+      ],
+      "positive": [
+        "27",
+        0
+      ],
+      "negative": [
+        "30",
+        0
+      ],
+      "latent_image": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "27": {
+    "inputs": {
+      "text": "物流车，干净，产品设计，完整视图，白色背景，高清，艺术感，3D渲染，16k，高细节，实物拍摄，逼真，真实产品",
+      "chatglm3_model": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MZ_ChatGLM3_V2",
+    "_meta": {
+      "title": "MinusZone - ChatGLM3TextEncodeV2"
+    }
+  },
+  "28": {
+    "inputs": {
+      "image": "style3.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "30": {
+    "inputs": {
+      "text": "文字，不完整，丑陋，不干净，脏",
+      "chatglm3_model": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MZ_ChatGLM3_V2",
+    "_meta": {
+      "title": "MinusZone - ChatGLM3TextEncodeV2"
+    }
+  },
+  "31": {
+    "inputs": {
+      "pixels": [
+        "10",
+        0
+      ],
+      "vae": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "32": {
+    "inputs": {
+      "samples": [
+        "14",
+        0
+      ],
+      "vae": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "34": {
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "x": 0,
+      "y": 0
+    },
+    "class_type": "LatentCrop",
+    "_meta": {
+      "title": "Crop Latent"
+    }
+  },
+  "35": {
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "x": 0,
+      "y": 0
+    },
+    "class_type": "ImageCrop",
+    "_meta": {
+      "title": "ImageCrop"
+    }
+  }
+}
